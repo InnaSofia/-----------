@@ -1,315 +1,458 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8" />
-        <title>Project English School</title>
-        <link rel="stylesheet" type="text/css" href="reset.css" />
-        <link rel="stylesheet" type="text/css" href="styles.css" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet">
-        <script src="https://kit.fontawesome.com/5a7e4cd635.js" crossorigin="anonymous"></script>
-    </head>
+html{
+    font-family: Nunito Sans;
+    color: #1C1917;
+}
 
-    <body class="body">
-    <div id="hero">
-        
-        <div class="conteiner">
-              
-            <header id="header">
+:root{
+    --color-primary: #f97316; 
+}
 
-                <div id="logo-conteiner">
-                    <img src="logo.svg" id="logo">
-                </div>
+#hero{
+    height: 800px;
+    background: url(hero.jpg);
+    background-position: center top;
+    background-size: cover;
+}
 
-                <div class="navigation">
-                  <a class="navigation-text" href="#cost">Стоимость</a>
-                  <a class="navigation-text" href="#reviews">Отзывы</a>
-                </div>
-                  
-                <div>
-                <i class="fa-solid fa-phone fa-phone"></i>
-                   <a class="navigation-text">+7 (123) 456-78-90</a>
-             </div>
+.conteiner{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
 
-            </header>
-
-        <div>
-            <h1 class="heading">Лучший способ заговорить на английском</h1>
-            <p class="heading-text">Занимайся онлайн в удобное время в 
-                любом месте! Запишитесь на бесплатный пробный урок уже 
-                сегодня.</p>
-        </div>
+#header{
+ height:120px;
+ display:flex;
+ flex-direction:row;
+ justify-content:space-between;
+ align-items:center;
+}
+#logo{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
 
 
-        <div>
-            <button class="button">
-                Записаться на пробный урок
-            </button>
-        </div>
+.navigation{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 
-        </div>
-    </div>
+}
 
-    <div>
-        <div class="conteiner_inner">
-         <h2 class="head">Начните разговаривать с первого занятия</h2>
-         
-         <div class="menu-content">
+.navigation-text{
+    padding-right: 20px;
+    font-size: 17px;
+    font-weight: 300;
+    text-decoration: none;
+}
 
+.navigation-text:hover{
+    color: #65a30d;
+}
 
-              <div class="menu">
-                <i class="fa-regular fa-comment-dots icons"></i>
-                <p class="menu-text">Разговорная речь</p>
-                <p class="content">Никаких грамматических заданий по учебнику! 
-                Изучайте язык в живой речи.</p>    
-             </div> 
+.heading{
+    font-size: 60px;
+    font-weight: 600;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    max-width: 50%;
+    
+}
 
+.heading-text{
+    font-size: 20px;
+    margin-bottom: 50px;
+    max-width: 40%;
+    color: #57534E;
+    font-weight: 300;
+    line-height: 22px;
+    
+}
 
-             <div class="menu">
-                <i class="fa-solid fa-globe icons"></i>              
-                <p class="menu-text">Современный язык</p>
-                <p class="content">Изучайте актуальный язык, общаясь 
-                    с преподавателем на современные темы.</p>
-             </div>
+.button{
+    
+    background-color: var(--color-primary);
+    color: white;
+    font-size: 20px;
+    border-radius: 8px;
+    padding: 16px 32px;
+    box-shadow: 1px 1px 4px #d6d3d1;
+    border: none;
+}
 
+.conteiner_inner{
+    margin: 0 auto;
+    height: 800px;
+    background-position: center top;
+    background-size: cover;
+    max-width: 1024px;
+    
+}
 
-             <div class="menu">
-                <i class="fa-solid fa-person icons"></i>
-                <p class="menu-text">Индивидуальные занятия</p>
-                <p class="content">Преподаватель занимается только с 
-                    Вами и Вы учитесь намного быстрее.</p>  
-             </div>
+.head{
 
-         </div>  
-         
-         
-         <div class="article">
-            <div class="article-us">
-             <h3 class="article-heading">Мы научим говорить уверенно!</h3>
-             <p class="article-text">Мы считаем, что главная задача языка - 
-                помочь нам общаться друг с другом. Поэтому на наших занятиях 
-                мы отдаем приоретет разговорной речи и навыкам аудирования.</p>
-            
-                 <p class="article-text">Мы не изучаем грамматические 
-                    правила по учебнику, 
-                 мы не выполняем задания, где нужно раскрыть скобки 
-                 или поставить правильный артикль, мы занимаем самым 
-                 главным - разговариваем. Мы разговариваем на самые 
-                 актуальные и интересные темы, чтобы вы могли пополнить 
-                 свой словарным запас актуальными современными словами.</p>
-            </div>
-                
-          <img class="article-image" src="group-people.jpg">
-         </div>
+   text-align: center; 
+   font-size: 35px;
+   text-align: center;
+   font-weight: 600;
+   margin-top: 100px;
+}
 
+.speech{
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
 
-        </div>
-    </div>
+.messenger{
+    font-size: 25px;
+    padding: 3px;
+}
 
+.menu-text{
+    font-size: 20px;
+    font-weight: 300;
+    
+}
 
-    <div class="conteiner-orange">
-          <div class="conteiner-orange-head">
-            <h1 class="conteiner-head">Запишитесь на бесплатный урок 
-                уже сегодня</h1>
-            <p class="conteiner-orange-text">Преподаватель определит 
-                ваш уровень и Вы пройдете полноценный первый урок</p>
-        </div>
+.content{
+    font-size: 18px;
+    font-weight: 200;
+    margin-top: 20px;
+    color: #57534E;
+    text-align: left;
+    margin-left: 10px;
+}
 
-        <div class="shape">
-            <input class="shape-input" placeholder="Ваше имя">
-            <input class="shape-input" type placeholder="Ваш телефон">
-            <button class="button-shape">Записаться на пробный урок</button>
-        </div>
-
-    </div>
-
-    <div id="reviews" class="conteiner-reviews">
-         <div class="reviews">
-            <h1 class="reviews-head">У нас уже более 500 довольных учеников!</h1>
-
-            <div class="conteiner-text" >
-
-               <div class="reviews-name">
-                 <p class="name">Ольга Морозова</p>
-                 <p class="reviews-text">Спасибо огромное преподавателю Марине. 
-                    Я замимаюсь уже 6 месяцев и это лучшая 
-                    школа иностранного языка, в которой я 
-                    училась.</p>
-               </div>
-
-               <div class="reviews-name">
-                <p class="name">Андрей Иванов</p>
-                <p class="reviews-text">Я учил английский 10 лет с 5 класса, но 
-                    так и не мог уверенно разговаривать даже 
-                    на бытовые темы. Я начал учиться в вашей 
-                    школе всего 4 месяца назад и сейчас я вернулся 
-                    из путешествия, в котором уверенно мог общаться 
-                    с таксистами, официантами и гидами. Теперь мне 
-                    нестрашно путешествовать!</p>
-              </div>
-
-              <div class="reviews-name">
-                <p class="name">Настя Петрова</p>
-                <p class="reviews-text">Мне очень нравится методика преподавания, на 
-                    уроках мы очень много общаемся и не выполняем 
-                    скучных задания из учебников. Благодаря занятиям 
-                    мой язык стал более живой, современный, я узнала 
-                    про сленг, а на прошлой неделе познакомилась 
-                    с иностранцем!</p>
-              </div>
-
-
-
-            </div>
-
-
-         </div>
-
-    </div>
-
-
-<div class="conteiner_rate">
-    <h1 id="cost" class="head">Наши абонементы</h1>
+.menu{
+    padding: 30px;
+    bottom: 30px;
+    background-color: #f0edeb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    width: 300px;
+    text-align: center;
+    width: 30%;
+    margin: 10px;
     
 
-    <div class="rates">
+    
+}
 
-        <div class="rate">
-          <p class="rate-head">1 месяц</p>
-          <p class="rate-price">12 000 руб / 8 уроков</p>
+.menu-content{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+    padding-bottom: 30px;  
+    margin-left: 20px; 
+    margin-right: 20px;
+    flex-grow: 1;
+}
 
-     <div class="icon-detali">
-        <div class="icon-text">
-            <i class="fa-solid fa-check icon"></i>
-            <p>8 уроков</p>
-        </div>
+.icons{
+    font-size: 25px;
+    color: white;
+    background-color: var(--color-primary);
+    width: 40px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-shadow: 1px 1px 4px #d6d3d1;
 
-        <div class="icon-text">
-            <i class="fa-solid fa-check icon"></i>
-            <p>занятия 2 раза в неделю</p>
-        </div>
+}
 
-        <div class="icon-text">
-            <i class="fa-solid fa-check icon"></i>
-            <p>индивидуальные уроки</p>
-        </div>
-     </div>
+.article{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 
-    <button class="button-rate">Записаться</button>
+}
 
+.article-heading{
+    font-weight: 600;
+    margin-top: 50px;
+    font-size: 35px;
+    margin-bottom: 30px;
+}
 
-        </div>
+.article-text{
+    font-size: 18px;
+    font-weight: 200;
+    color: #2e2d2b;
+    margin-top: 10px;
+    line-height: 20px;
+}
 
+.article-image{
+    width: 500px;
+    margin-left: 20px;
+}
 
+.conteiner-orange{
+    background-color: #ffedd5;
+    margin: 0 auto;
+    
+}
 
-        <div class="rate">
-            <p class="rate-head">3 месяца</p>
-            <p class="rate-price">32 000 руб / 24 урока</p>
-  
-       <div class="icon-detali">
-          <div class="icon-text">
-              <i class="fa-solid fa-check icon"></i>
-              <p>24 урока</p>
-          </div>
-  
-          <div class="icon-text">
-              <i class="fa-solid fa-check icon"></i>
-              <p>занятия 2 раза в неделю</p>
-          </div>
-  
-          <div class="icon-text">
-              <i class="fa-solid fa-check icon"></i>
-              <p>индивидуальные уроки</p>
-          </div>
+.conteiner-orange-head{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column
+}
 
-          <div class="icon-text">
-            <i class="fa-solid fa-check icon"></i>
-            <p>бесплатный разговорный клуб</p>
-        </div>
-       </div>
-  
-      <button class="button-rate">Записаться</button>
-  
-  
-          </div>
-
-
-
-          <div class="rate">
-            <p class="rate-head">6 месяцев</p>
-            <p class="rate-price">55 000 руб / 58 уроков</p>
-  
-       <div class="icon-detali">
-          <div class="icon-text">
-              <i class="fa-solid fa-check icon"></i>
-              <p>58 уроков</p>
-          </div>
-  
-          <div class="icon-text">
-              <i class="fa-solid fa-check icon"></i>
-              <p>занятия 2 раза в неделю</p>
-          </div>
-  
-          <div class="icon-text">
-              <i class="fa-solid fa-check icon"></i>
-              <p>индивидуальные уроки</p>
-          </div>
-          <div class="icon-text">
-            <i class="fa-solid fa-check icon"></i>
-            <p>бесплатный разговорный клуб</p>
-        </div>
-        <div class="icon-text">
-            <i class="fa-solid fa-check icon"></i>
-            <p>бесплатная заморозка абонемента</p>
-        </div>
-       </div>
-  
-      <button class="button-rate">Записаться</button>
-  
-  
-          </div>
-
-
-
-
-
-    </div>
-
-</div>
-
-<footer class="footer">
- <div class="conteiner-contact">
+.conteiner-head{
+    font-size: 36px;
+    text-align: center;
+    font-weight: 600;
+    padding-top: 60px;
  
-     <div class="conteiner-footer">
-     
     
-     
-        <div class="phone">
-            <i class="fa-solid fa-phone contact-icon"></i>
-                   <a href="tel:+71234567890" class="contact-icon-text">+7 (123) 456-78-90</a>
-        </div>
+}
+.shape{
+    text-align: center; 
+    font-size: 35px;
+   text-align: center;
+   font-weight: 600;
+   margin-top: 50px;
+   padding-bottom: 80px;
 
-        <div>
-            <i class="fa-brands fa-instagram contact-icon"></i>
-            <i class="fa-brands fa-facebook contact-icon"></i>
-            <i class="fa-brands fa-twitter contact-icon"></i>
+}
 
-        </div>
+.conteiner-orange-text{
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 20px;
+}
 
+.shape-input{
+    border: 1px solid #D6D3D1;
+    height: 50px;
+    border-radius: 8px;
+    font-size: 20px;
+    padding-left: 8px;
+    margin-right: 10px;
+}
 
-        <a href="mailto:english_house@email.com" class="contact-icon-text">english_house@email.com</a>
+.button-shape{
+    background-color: var(--color-primary);
+    border-radius: 8px;
+    font-size: 20px;
+    box-shadow: 1px 1px 4px #d6d3d1;
+    padding: 16px 32px;
+    border: none;
+    color: white;
 
+}
+
+.conteiner-reviews{
+    background-color: #fafaf9;
+    padding-bottom: 100px;
+}
+
+.reviews{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.reviews-title{
+    font-size: 36px;
+    text-align: center;
+    font-weight: 600;
     
+    
+}
+.name{
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.reviews-head{
+    text-align: center; 
+   font-size: 35px;
+   text-align: center;
+   font-weight: 600;
+   padding-top: 100px;
+}
 
 
+.reviews-text{
+    font-weight: 300;
+    color: #44403c;
 
-     </div>
-</div>
-</footer>
+}
+
+.reviews-name{
+    border-bottom: 1px solid #D6D3D1;
+    padding-top: 40px;
+    width: 600px;
+    padding-bottom: 30px;
+}
+
+.conteiner_rate{
+    background-position: center top;
+    background-size: cover;
+    max-width: 1024px;
+    margin: 0 auto;
+
+}
+.conteiner-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    line-height: 20px;
+}
+
+.rate{
+    
+    border: 1px solid #e7e5e4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    width: 30%;
+   
+}
+.rates{
+    
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin: 0 auto;
+    vertical-align: baseline;
 
 
+}
 
-        
-    </body>
-</html>
+.rate-head{
+    color: #F97316;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.rate-price{
+    font-size: 25px;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.icon{
+    color: #65a30d;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.icon-text{
+    display: flex;
+    flex-direction: row;
+    margin: 5px 0;
+    font-size: 14px;
+    align-items: flex-start;
+    
+}
+
+.icon-detali{
+    flex-grow: 1;
+    margin-top: 20px;
+}
+
+.button-rate{
+    background-color: #ffedd5;
+    border-radius: 8px;
+    width: 100%;
+    color: #ea580c;
+    margin-top: 20px;
+    font-size: 16px;
+    border: none;
+    padding: 10px 20px;
+}
+
+.conteiner-footer{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   height: 100%;
+   color: #78716c;
+   
+
+}
+
+.contact{
+color: #78716c;
+}
+
+.phone{
+    display: flex;
+    align-items: center;
+}
+
+.contact-icon{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    font-size: 20px;
+    
+}
+
+.footer{
+    height: 150px;
+    background-color: #e7e5e4;
+    display: flex;
+    align-items: center;
+}
+
+.conteiner-contact{
+    max-width: 1024px;
+    width: 100%;
+    margin:0 auto;
+}
+
+.contact-icon-text{
+    font-size: 15px;
+    text-decoration: none;
+    color: #78716c;
+}
+
+.contact-icon-text:hover{
+    color: #ea580c;
+}
+
+.contact-icon-text:active{
+    color: #ffffff;
+}
+
+
+.button:hover{
+ background-color: #825136;
+}
+
+.button-shape:hover{
+    background-color: #825136;
+}
+.button-rate:hover{
+    background-color: #825136;
+    color: rgb(255, 255, 255);
+}
+
+.contact-icon:hover{
+    color: #ea580c;
+}
