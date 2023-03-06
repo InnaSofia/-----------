@@ -261,9 +261,12 @@ html{
     padding: 16px 32px;
     border: none;
     color: white;
-   
+    transition: all 500ms linear;
+    cursor: pointer;
 }
-
+.button-shape:hover{
+    transform: scale(1.1);
+}
 
 .conteiner-reviews{
     background-color: #fafaf9;
