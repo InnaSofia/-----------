@@ -8,10 +8,11 @@ html{
 }
 
 #hero{
-    height: 800px;
+    
     background: url(hero.jpg);
     background-position: center top;
     background-size: cover;
+    padding-bottom: 200px;
 }
 
 .conteiner{
