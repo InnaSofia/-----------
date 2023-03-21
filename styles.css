@@ -15,6 +15,22 @@ html{
     padding-bottom: 200px;
 }
 
+@media (max-width:600px) { 
+    
+    #hero{
+        min-width: 100%;
+        padding-bottom: 50px;
+    }
+}
+
+
+
+@media (max-width:600px) {   
+.head_1{
+    padding-left: 10px;
+    padding-bottom: 0;
+}
+}
 .conteiner{
     max-width: 1024px;
     width: 100%;
@@ -24,9 +40,16 @@ html{
 #header{
  
  display:flex;
- flex-direction:row;
+ flex-wrap: wrap;
  justify-content:space-between;
  align-items:center;
+}
+
+@media (max-width:600px) {
+    #header{
+       flex-wrap:wrap ; 
+       padding-left: 10px;
+    }
 }
 #logo{
     width: 100px;
@@ -63,6 +86,15 @@ html{
     
 }
 
+@media (max-width:600px) {
+    .heading{
+        font-size: 30px;
+    }
+    .heading-text{
+        font-size: 10px;
+    }
+}
+
 .heading-text{
     font-size: 20px;
     margin-bottom: 50px;
@@ -85,6 +117,13 @@ html{
     transition: all 500ms linear;
     cursor: pointer;
 }
+@media (max-width:600px){
+    .button{
+        margin-left: 10px;
+    }
+}
+
+
 .button:hover{
     transform: scale(1.1);
 }
@@ -94,16 +133,15 @@ html{
     background-position: center top;
     background-size: cover;
     max-width: 1024px;
-    
+    display: flex;
+    flex-direction: column;
 }
 
 .head{
-
-   text-align: center; 
    font-size: 35px;
    text-align: center;
    font-weight: 600;
-   margin-top: 100px;
+   margin-top: 50px;
 }
 
 .speech{
@@ -135,15 +173,12 @@ html{
 
 .menu{
     padding: 30px;
-    bottom: 30px;
     background-color: #f0edeb;
     display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 20px;
-    width: 300px;
     text-align: center;
-    width: 30%;
     margin: 10px;
     transition: all 200ms linear;
     cursor: pointer;
@@ -156,12 +191,17 @@ html{
     justify-content: space-around;
     padding-top: 50px;
     padding-bottom: 30px;  
-    margin-left: 20px; 
-    margin-right: 20px;
     flex-grow: 1;
 
 }
 
+@media (max-width:600px) {
+    .menu-content{
+       flex-wrap:wrap ; 
+       margin-left: 20px; 
+       margin-right: 20px;
+    }
+}
 .icons{
     font-size: 25px;
     color: white;
@@ -183,7 +223,12 @@ html{
     align-items: center;
 
 }
-
+@media (max-width:600px) {
+    .article{
+       flex-wrap:wrap ; 
+       margin-left: 10px;
+    }
+}
 .article-heading{
     font-weight: 600;
     margin-top: 50px;
@@ -200,14 +245,19 @@ html{
 }
 
 .article-image{
-    width: 500px;
+    width: 600px;
     margin-left: 20px;
 }
-
+@media (max-width:600px){
+    .article-image{
+        width: 300px;
+        margin-left: 0;
+    }
+}
 .conteiner-orange{
     background-color: #ffedd5;
     margin: 0 auto;
-    
+    padding-left: 10px;
 }
 
 .conteiner-orange-head{
@@ -227,31 +277,43 @@ html{
  
     
 }
-.shape{
-    text-align: center; 
+.shape{ 
     font-size: 35px;
    text-align: center;
    font-weight: 600;
    margin-top: 50px;
    padding-bottom: 80px;
+   
 
 }
+
+@media (max-width:600px){
+    .shape{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+}
+
 
 .conteiner-orange-text{
     font-size: 20px;
     font-weight: 300;
     text-align: center;
     margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+
 }
 
 .shape-input{
-    border: 1px solid #D6D3D1;
     height: 50px;
     border-radius: 8px;
     font-size: 20px;
     padding-left: 8px;
     margin-right: 10px;
     border: none;
+    margin-bottom: 10px;
 }
 
 .button-shape{
@@ -264,6 +326,7 @@ html{
     color: white;
     transition: all 500ms linear;
     cursor: pointer;
+    margin-right: 10px;
 }
 .button-shape:hover{
     transform: scale(1.1);
@@ -310,7 +373,7 @@ html{
 .reviews-name{
     border-bottom: 1px solid #D6D3D1;
     padding-top: 40px;
-    width: 600px;
+    
     padding-bottom: 30px;
 }
 
@@ -319,7 +382,8 @@ html{
     background-size: cover;
     max-width: 1024px;
     margin: 0 auto;
-
+    display: flex;
+    flex-direction: column;
 }
 .conteiner-text{
     display: flex;
@@ -329,32 +393,47 @@ html{
     margin-top: 40px;
     line-height: 20px;
 }
-
+ @media (min-width:600px) {
+    .conteiner-text{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+ }
 .rate{
     
     border: 1px solid #e7e5e4;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    box-sizing: border-box;
+    text-align: left;
     border-radius: 8px;
     padding: 20px;
     margin: 10px;
-    width: 30%;
-   
+   flex-grow: 1;
+    
 }
 .rates{
     
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: stretch;
     padding-top: 50px;
     padding-bottom: 50px;
-    margin: 0 auto;
-    vertical-align: baseline;
-
+    margin-left: 20px;
+    margin-right: 20px;
+    flex-grow: 1;    
+   
+    
 
 }
+@media (min-width:600px) {
+    .rates{
+       flex-wrap:wrap;
+       margin-left: 20px;
+       margin-right: 20px;
+       flex-direction: row;
 
+    }
+}
 .rate-head{
     color: #F97316;
     font-size: 18px;
@@ -376,10 +455,9 @@ html{
 
 .icon-text{
     display: flex;
-    flex-direction: row;
     margin: 5px 0;
     font-size: 14px;
-    align-items: flex-start;
+    align-items: center;
     
 }
 
@@ -406,13 +484,21 @@ html{
 .conteiner-footer{
    display: flex;
    align-items: center;
-   justify-content: space-between;
+   flex-direction: column;
    height: 100%;
    color: #78716c;
-   
-
 }
 
+@media (min-width:600px) {
+    .conteiner-footer{
+        flex-wrap: wrap;
+       flex-direction: row;
+       justify-content: space-between;
+       padding-left: 30px;
+       padding-right: 30px;
+
+    }
+}
 .contact{
 color: #78716c;
 }
@@ -472,4 +558,13 @@ color: #78716c;
 
 .contact-icon:hover{
     color: #ea580c;
+}
+.brands{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+@media (min-width:600px){
+    .brands{
+        margin:0;
+    }
 }
