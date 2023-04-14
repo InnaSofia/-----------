@@ -12,14 +12,14 @@ html{
     background: url(hero.jpg);
     background-position: center top;
     background-size: cover;
-    padding-bottom: 200px;
+    padding-bottom: 10%;
 }
 
 @media (max-width:600px) { 
     
     #hero{
         min-width: 100%;
-        padding-bottom: 50px;
+        
     }
 }
 
@@ -27,8 +27,8 @@ html{
 
 @media (max-width:600px) {   
 .head_1{
-    padding-left: 10px;
-    padding-bottom: 0;
+    margin: 0 3%;
+  
 }
 }
 .conteiner{
@@ -45,10 +45,17 @@ html{
  align-items:center;
 }
 
-@media (max-width:600px) {
+@media (max-width:700px) {
     #header{
        flex-wrap:wrap ; 
        padding-left: 10px;
+       flex-direction: column;
+    }
+    .navigation{
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 5px;
+        margin-bottom: 2%;
     }
 }
 #logo{
@@ -86,7 +93,7 @@ html{
     
 }
 
-@media (max-width:600px) {
+@media (max-width:700px) {
     .heading{
         font-size: 30px;
     }
@@ -119,7 +126,7 @@ html{
 }
 @media (max-width:600px){
     .button{
-        margin-left: 10px;
+        margin: 0 3%;
     }
 }
 
@@ -195,7 +202,7 @@ html{
 
 }
 
-@media (max-width:600px) {
+@media (max-width:700px) {
     .menu-content{
        flex-wrap:wrap ; 
        margin-left: 20px; 
@@ -217,30 +224,38 @@ html{
 .article{
     max-width: 1024px;
     width: 100%;
-    margin: 0 auto;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 
 }
-@media (max-width:600px) {
+@media (max-width:850px) {
     .article{
        flex-wrap:wrap ; 
-       margin-left: 10px;
     }
+    .article-heading{
+        text-align: center;
+    }
+    .article-text{
+        text-align: center;
+    }
+    
+}
+.article-us{
+    margin: 0 2%;
 }
 .article-heading{
     font-weight: 600;
     margin-top: 50px;
     font-size: 35px;
-    margin-bottom: 30px;
+    margin-bottom: 5%;
 }
 
 .article-text{
     font-size: 18px;
     font-weight: 200;
     color: #2e2d2b;
-    margin-top: 10px;
+    margin-top: 5%;
     line-height: 20px;
 }
 
@@ -248,7 +263,7 @@ html{
     width: 600px;
     margin-left: 20px;
 }
-@media (max-width:600px){
+@media (max-width:700px){
     .article-image{
         width: 300px;
         margin-left: 0;
@@ -287,7 +302,7 @@ html{
 
 }
 
-@media (max-width:600px){
+@media (max-width:700px){
     .shape{
         display: flex;
         flex-wrap: wrap;
@@ -390,15 +405,26 @@ html{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 40px;
+    margin: 0 2%;
     line-height: 20px;
 }
- @media (min-width:600px) {
+ @media (min-width:700px) {
     .conteiner-text{
         margin-left: 10px;
         margin-right: 10px;
     }
+    .reviews-name{
+        text-align: center;
+    }
  }
+
+ @media (max-width:600px) {
+    .reviews-name{
+        text-align: center;
+    }
+ }
+
+
 .rate{
     
     border: 1px solid #e7e5e4;
@@ -425,7 +451,7 @@ html{
     
 
 }
-@media (min-width:600px) {
+@media (min-width:700px) {
     .rates{
        flex-wrap:wrap;
        margin-left: 20px;
@@ -489,7 +515,7 @@ html{
    color: #78716c;
 }
 
-@media (min-width:600px) {
+@media (min-width:700px) {
     .conteiner-footer{
         flex-wrap: wrap;
        flex-direction: row;
