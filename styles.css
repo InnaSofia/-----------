@@ -105,6 +105,12 @@ html{
  align-items:center;
 }
 
+.img-menu {
+    width: 30px;
+    height: 30px;
+    color: rgb(255, 255, 255);
+}
+
 @media (max-width:700px) {
     #header{
        flex-wrap:wrap ; 
