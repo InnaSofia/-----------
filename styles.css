@@ -101,7 +101,7 @@ html{
  
  display:flex;
  flex-wrap: wrap;
- justify-content:space-between;
+ justify-content:flex-start;
  align-items:center;
 }
 
@@ -280,7 +280,9 @@ html{
     box-shadow: 1px 1px 4px #d6d3d1;
 
 }
-
+.fa-phone{
+    color: #ff6b35;
+}
 .article{
     max-width: 1024px;
     width: 100%;
